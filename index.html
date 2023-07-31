@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4e2f4edfed.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav class="">
+        <div
+            class="bg-white md:bg-red-400 rounded-full max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div class="hidden w-full md:block md:w-auto md:order-first order-last" id="navbar-default">
+                <ul class="ml-4 flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 ">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-grey-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-grey-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                            Us</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-grey-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-grey-900 md:text-white  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">All
+                            Fruits</a>
+                    </li>
+
+                </ul>
+            </div>
+            <a href="" class="flex items-center">
+                <img src="images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                <span
+                    class="self-center text-grey-900 md:text-white text-2xl font-semibold whitespace-nowrap dark:text-white">Fruit
+                    Burst</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+
+            <form class="hidden md:block">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <input type="search" id="default-search"
+                        class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50  "
+                        placeholder="Search here" required>
+                    <button type="submit"
+                        class="text-grey-900 hover:text-white absolute right-2.5 bottom-2.5 hover:bg-red-400  hover:outline-none hover:ring-red-300 font-medium rounded-full text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+
+
+
+        </div>
+    </nav>
+
+
+
+    <!-- Carousel -->
+
+    <section class="grid max-w-screen-xl mx-auto mt-8">
+        <div id="default-carousel" class="relative" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="relative w-full h-full">
+                        <img src="images/banner1.png" class="absolute block w-full h-full object-cover" alt="...">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40">
+                            <h3 class="text-white text-xl font-bold mb-2">Fresh Fruits Sale!</h3>
+                            <p class="text-white text-sm">Enjoy our hand-picked selection of fresh, juicy fruits.</p>
+                            <button class="bg-[#F85559] text-white px-4 py-2 mt-4 rounded">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="relative w-full h-full">
+                        <img src="images/banner2.png" class="absolute block w-full h-full object-cover" alt="...">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40">
+                            <h3 class="text-white text-xl font-bold mb-2">Delicious and Nutritious!</h3>
+                            <p class="text-white text-sm">Treat yourself to our wide range of fresh, nutritious fruits.
+                            </p>
+                            <button class="bg-[#F85559] text-white px-4 py-2 mt-4 rounded">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="relative w-full h-full">
+                        <img src="images/banner3.png" class="absolute block w-full h-full object-cover" alt="...">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40">
+                            <h3 class="text-white text-xl font-bold mb-2">Farm Fresh Fruits</h3>
+                            <p class="text-white text-sm">Straight from our farms to your table.</p>
+                            <button class="bg-[#F85559] text-white px-4 py-2 mt-4 rounded">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="relative w-full h-full">
+                        <img src="images/banner4.png" class="absolute block w-full h-full object-cover" alt="...">
+                        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40">
+                            <h3 class="text-white text-xl font-bold mb-2">Discover Exotic Fruits</h3>
+                            <p class="text-white text-sm">Experience the unique flavors of exotic fruits from around the
+                                world.</p>
+                            <button class="bg-[#F85559] text-white px-4 py-2 mt-4 rounded">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Deal of the day -->
+    <section>
+        <!-- Card Blog -->
+        <div class="max-w-screen-xl  mt-4 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class="flex flex-col items-center md:flex-row md:justify-between mb-6">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Deal of the Day</h2>
+                <div class="flex items-center space-x-2 mt-4">
+                    <div class="flex flex-col items-center">
+                        <p class="text-3xl font-bold text-gray-900 dark:text-white">02</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300">Days</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Colon.svg" alt="Colon Icon"
+                        class="h-8 w-auto md:h-10 lg:h-12 mx-2">
+                    <div class="flex flex-col items-center">
+                        <p class="text-3xl font-bold text-gray-900 dark:text-white">01</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300">Hours</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Colon.svg" alt="Colon Icon"
+                        class="h-8 w-auto md:h-10 lg:h-12 mx-2">
+                    <div class="flex flex-col items-center">
+                        <p class="text-3xl font-bold text-gray-900 dark:text-white">30</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300">Minutes</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Colon.svg" alt="Colon Icon"
+                        class="h-8 w-auto md:h-10 lg:h-12 mx-2">
+                    <div class="flex flex-col items-center">
+                        <p class="text-3xl font-bold text-gray-900 dark:text-white">37</p>
+                        <p class="text-sm text-gray-700 dark:text-gray-300">Seconds</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                    <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                        <img src="images/fruit1.png" alt="Apples">
+                    </div>
+                    <div class="p-4 md:p-6 flex flex-col justify-center items-center">
+                        <p>12.90$ - 18.55$</p>
+                        <hr class="my-2 w-3/4">
+                        <p class="block mb-1 text-center text-xl font-bold">
+                            Grapes
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                        </p>
+                        <button data-modal-target="defaultModal1" data-modal-toggle="defaultModal1"
+                            class="block text-orange-600 focus:outline-none font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 1 -->
+
+                <!-- Card 2 -->
+                <div
+                    class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                    <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                        <img src="images/fruit2.png" alt="Oranges">
+                    </div>
+                    <div class="p-4 md:p-6 flex flex-col justify-center items-center">
+                        <p>9.99$ - 14.95$</p>
+                        <hr class="my-2 w-3/4">
+                        <p class="block mb-1 text-center text-xl font-bold">
+                            Oranges
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                        </p>
+                        <button data-modal-target="defaultModal2" data-modal-toggle="defaultModal2"
+                            class="block text-orange-600 focus:outline-none font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 2 -->
+
+                <!-- Card 3 -->
+                <div
+                    class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                    <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                        <img src="images/fruit3.png" alt="Berries">
+                    </div>
+                    <div class="p-4 md:p-6 flex flex-col justify-center items-center">
+                        <p>15.50$ - 22.00$</p>
+                        <hr class="my-2 w-3/4">
+                        <p class="block mb-1 text-center text-xl font-bold">
+                            Mangoes
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                        </p>
+                        <button data-modal-target="defaultModal3" data-modal-toggle="defaultModal3"
+                            class="block text-orange-600 focus:outline-none font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 3 -->
+
+                <!-- Card 4 -->
+                <div
+                    class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                    <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                        <img src="images/fruit4.png" alt="Strawberry">
+                    </div>
+                    <div class="p-4 md:p-6 flex flex-col justify-center items-center">
+                        <p>6.99$ - 12.00$</p>
+                        <hr class="my-2 w-3/4">
+                        <p class="block mb-1 text-center text-xl font-bold">
+                            Strawberry
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                            <i class="fa-regular fa-star fa-xl" style="color: #ea3e3e;"></i>
+                        </p>
+                        <button data-modal-target="defaultModal4" data-modal-toggle="defaultModal4"
+                            class="block text-orange-600 focus:outline-none font-medium text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            type="button">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card 4 -->
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Card Blog -->
+    </section>
+
+
+    <!-- Main modals -->
+    <div>
+        <!-- Main modals -->
+        <div>
+            <!-- Modal 1 -->
+            <div id="defaultModal1" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100% - 1rem)] max-h-full">
+                <div class="flex items-center justify-center min-h-screen">
+                    <div class="bg-white w-full p-4 md:p-8 rounded-lg flex flex-col items-center justify-center ">
+                        <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                            <img src="images/fruit1.png" alt="Strawberry">
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4">Grapes</h2>
+                        <p class="mb-2">Price Range: $12.90 - $18.55</p>
+                        <p class="mb-2">Rating:
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                        </p>
+                        <p class="mb-2">Grapes are small, round, and sweet fruits that grow in clusters on vines. They
+                            are
+                            popular for eating fresh and for making various products such as raisins, wine, and juice.
+                        </p>
+
+                        <div class="flex mt-4">
+                            <button data-modal-toggle="defaultModal1"
+                                class="text-red-600 border border-red-600 px-6 py-3 rounded-lg mr-2">Close</button>
+                            <button class="bg-[#F85559] text-white px-6 py-3 rounded-lg">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div id="defaultModal2" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100% - 1rem)] max-h-full">
+                <div class="flex items-center justify-center min-h-screen">
+                    <div class="bg-white w-full p-4 md:p-8 rounded-lg flex flex-col items-center justify-center ">
+                        <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                            <img src="images/fruit2.png" alt="Strawberry">
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4">Oranges</h2>
+                        <p class="mb-2">Price Range: $9.99 - $14.95</p>
+                        <p class="mb-2">Rating:
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                        </p>
+                        <p class="mb-2">Oranges are citrus fruits known for their juicy and sweet flavor. They are an
+                            excellent
+                            source of vitamin C and are commonly consumed as fresh fruits or in various beverages and
+                            desserts.
+                        </p>
+
+                        <div class="flex mt-4">
+                            <button data-modal-toggle="defaultModal2"
+                                class="text-red-600 border border-red-600 px-6 py-3 rounded-lg mr-2">Close</button>
+                            <button class="bg-[#F85559] text-white px-6 py-3 rounded-lg">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div id="defaultModal3" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100% - 1rem)] max-h-full">
+                <div class="flex items-center justify-center min-h-screen">
+                    <div class="bg-white w-full p-4 md:p-8 rounded-lg flex flex-col items-center justify-center ">
+                        <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                            <img src="images/fruit3.png" alt="Strawberry">
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4">Mangoes</h2>
+                        <p class="mb-2">Price Range: $15.50 - $22.00</p>
+                        <p class="mb-2">Rating:
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                        </p>
+                        <p class="mb-2">Mangoes are tropical fruits known for their sweet and aromatic taste. They are
+                            rich
+                            in
+                            vitamins, minerals, and antioxidants. Mangoes are often eaten fresh, used in smoothies, and
+                            added to
+                            various dishes and desserts.</p>
+
+                        <div class="flex mt-4">
+                            <button data-modal-toggle="defaultModal3"
+                                class="text-red-600 border border-red-600 px-6 py-3 rounded-lg mr-2">Close</button>
+                            <button class="bg-[#F85559] text-white px-6 py-3 rounded-lg">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 4 -->
+            <div id="defaultModal4" tabindex="-1" aria-hidden="true"
+                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100% - 1rem)] max-h-full">
+                <div class="flex items-center justify-center min-h-screen">
+                    <div class="bg-white w-full p-4 md:p-8 rounded-lg flex flex-col items-center justify-center ">
+                        <div class="h-52 flex flex-col justify-center items-center rounded-t-xl">
+                            <img src="images/fruit4.png" alt="Strawberry">
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4">Strawberry</h2>
+                        <p class="mb-2">Price Range: $6.99 - $12.00</p>
+                        <p class="mb-2">Rating:
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-solid fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                            <i class="fa-regular fa-star fa-xl text-red-600"></i>
+                        </p>
+                        <p class="mb-2">Strawberries are small, red fruits known for their juicy and sweet flavor. They
+                            are
+                            often used in desserts, salads, and beverages. Strawberries are also a good source of
+                            vitamin C
+                            and
+                            antioxidants.</p>
+
+                        <div class="flex mt-4">
+                            <button data-modal-toggle="defaultModal4"
+                                class="text-red-600 border border-red-600 px-6 py-3 rounded-lg mr-2">Close</button>
+                            <button class="bg-[#F85559] text-white px-6 py-3 rounded-lg">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Teams Section -->
+
+    <div class="relative overflow-hidden">
+        <div class="max-w-screen-xl  mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="max-w-2xl text-center mx-auto">
+                <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">Designed
+                    for
+                    you to get more <span class="text-blue-600">simple</span></h1>
+                <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">Build your business here. Take it anywhere.
+                </p>
+            </div>
+
+            <div class="mt-10 relative max-w-5xl mx-auto">
+                <div
+                    class="relative overflow-hidden w-full object-cover h-96 sm:h-[480px] bg-[url('images/banner1.png')] bg-no-repeat bg-center bg-cover rounded-xl">
+                </div>
+
+                <div class="absolute inset-0 backdrop-brightness-50 w-full h-full">
+                    <div class="flex flex-col justify-center items-center w-full h-full">
+                        <div
+                            class="inline-flex justify-center items-center gap-x-1.5 text-center text-sm  text-gray-800 hover:text-gray-600 rounded-full transition focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:bg-black dark:text-gray-200 dark:hover:text-gray-400 dark:focus:ring-offset-black">
+                            <div class="max-w-[85rem] mt-4 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                                <!-- Grid -->
+                                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                    <!-- Card -->
+                                    <div
+                                        class="group flex flex-col text-white h-full   shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                                        <div class="h-8 md:h-36 flex flex-col justify-center items-center rounded-t-xl">
+                                            <img class="h-12 md:h-full" src="images/member1.png" alt="">
+                                        </div>
+                                        <div class="p-2 md:p-6">
+                                            <span
+                                                class="block mb-1 text-center text-center text-sm md:text-xl font-bolddark:text-blue-500">
+                                                Awlad Hossain
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+                                    <!-- Card -->
+                                    <div
+                                        class="group flex flex-col text-white h-full   shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                                        <div class="h-8 md:h-36 flex flex-col justify-center items-center rounded-t-xl">
+                                            <img class="h-12 md:h-full" src="images/member2.png" alt="">
+                                        </div>
+                                        <div class="p-2 md:p-6">
+                                            <span
+                                                class="block mb-1 text-center text-center text-sm md:text-xl font-bolddark:text-blue-500">
+                                                Safia Chowdhury
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+                                    <!-- Card -->
+                                    <div
+                                        class="group flex flex-col text-white h-full   shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                                        <div class="h-8 md:h-36 flex flex-col justify-center items-center rounded-t-xl">
+                                            <img class="h-12 md:h-full" src="images/member3.png" alt="">
+                                        </div>
+                                        <div class="p-2 md:p-6">
+                                            <span
+                                                class="block mb-1 text-center text-center text-sm md:text-xl font-bolddark:text-blue-500">
+                                                Rokib Hossain
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+                                    <!-- Card -->
+                                    <div
+                                        class="group flex flex-col text-white h-full   shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                                        <div class="h-8 md:h-36 flex flex-col justify-center items-center rounded-t-xl">
+                                            <img class="h-12 md:h-full" src="images/member4.png" alt="">
+                                        </div>
+                                        <div class="p-2 md:p-6">
+                                            <span
+                                                class="block mb-1 text-center text-sm md:text-center text-sm md:text-xl font-bolddark:text-blue-500">
+                                                Chaity
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- End Card -->
+
+
+
+
+                                </div>
+                                <!-- End Grid -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute bottom-12 -left-20 -z-[1] w-48 h-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-slate-900">
+                    <div class="bg-white w-48 h-48 rounded-lg dark:bg-slate-900"></div>
+                </div>
+
+                <div
+                    class="absolute -top-12 -right-20 -z-[1] w-48 h-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
+                    <div class="bg-white w-48 h-48 rounded-full dark:bg-slate-900"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Why Choose Us -->
+    <!-- Icon Blocks -->
+    <div class="max-w-screen-xl  px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div class="max-w-4xl mx-auto">
+            <!-- Grid -->
+            <div class="grid md:grid-cols-3 gap-6 lg:gap-12">
+                <div class="space-y-6 lg:space-y-10 order-2 md:order-1">
+                    <!-- Icon Block -->
+                    <div class="flex">
+                        <svg class="flex-shrink-0 mt-2 h-8 w-8 text-gray-800 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.767 24.767 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25.286 25.286 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135Z" />
+                            <path
+                                d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Z" />
+                        </svg>
+                        <div class="ml-5 sm:ml-8">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                Creative minds
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-gray-400">
+                                We choose our teams carefully. Our people are the secret to great work.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex">
+                        <svg class="flex-shrink-0 mt-2 h-8 w-8 text-gray-800 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+                        </svg>
+                        <div class="ml-5 sm:ml-8">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                Effortless updates
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-gray-400">
+                                Benefit from automatic updates to all boards any time you need to make a change to
+                                your
+                                website.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex">
+                        <svg class="flex-shrink-0 mt-2 h-8 w-8 text-gray-800 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+                        </svg>
+                        <div class="ml-5 sm:ml-8">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                Strong empathy
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-gray-400">
+                                We've user tested our own process by shipping over 1k products for clients.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+                </div>
+                <!-- End Col -->
+
+
+                <div class="h-full  order-1 md:order-2">
+                    <img src=" images/whychoose1.png" alt="" class="object-cover h-full w-full rounded-lg">
+                </div>
+
+
+
+
+                <div class="space-y-6 lg:space-y-10  order-3 md:order-3">
+                    <!-- Icon Block -->
+                    <div class="flex md:flex-row-reverse">
+                        <svg class="flex-shrink-0 mt-2 h-8 w-8 text-gray-800 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z" />
+                        </svg>
+                        <div class="ml-5 md:mr-5 sm:ml-8 md:text-right">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                Conquer the best
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-gray-400">
+                                We stay lean and help your product do one thing well.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex md:flex-row-reverse items-center justify-center">
+                        <svg class="flex-shrink-0 mt-2 h-8 w-8 text-gray-800 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z" />
+                        </svg>
+                        <div class="ml-5 md:mr-5 sm:ml-8 md:text-right">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                Designing for people
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-gray-400">
+                                We actively pursue the right balance between functionality and aesthetics, creating
+                                delightful experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="flex md:flex-row-reverse">
+                        <svg class="flex-shrink-0 mt-2 h-8 w-8 text-gray-800 dark:text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
+                        </svg>
+                        <div class="ml-5 md:mr-5 sm:ml-8 md:text-right">
+                            <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                Simple
+                            </h3>
+                            <p class="mt-1 text-gray-600 dark:text-gray-400">
+                                From boarding passes to movie tickets, there's pretty much nothing you can't store
+                                with
+                                Preline.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+        </div>
+    </div>
+    <!-- End Icon Blocks -->
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="mt-auto w-full max-w-screen-xl  py-10 px-4 sm:px-6 lg:px-8 mx-auto  bg-slate-900 text-white">
+        <!-- Grid -->
+        <div class="text-center">
+            <div>
+                <a href="" class="flex items-center justify-center">
+                    <img src="images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Fruit
+                        Burst</span>
+                </a>
+            </div>
+            <!-- End Col -->
+
+            <div class="mt-3 flex items-center justify-center ">
+                <div class="flex  md:w-auto " id="navbar-default">
+                    <ul class=" flex flex-row p-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 ">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0   md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">All
+                                Fruits</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Brands -->
+            <div class="mt-3 space-x-2">
+                <a class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+                    href="#">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                    </svg>
+                </a>
+                <a class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+                    href="#">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </a>
+                <a class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+                    href="#">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+                <a class="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+                    href="#">
+                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
+                    </svg>
+                </a>
+            </div>
+            <!-- End Social Brands -->
+        </div>
+        <!-- End Grid -->
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
